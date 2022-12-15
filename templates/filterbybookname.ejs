@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css"/>
+    <title>Retrieve info</title>
+</head>
+<body>
+    <h1 style="color:blue">Member's Data</h1>
+    <div>
+		<strong>Name: </strong><%- name %><br>
+		<strong>Email Address: </strong><%- email %><br>
+		<strong>Book Name: </strong><%- bookname %><br>
+		<strong>Author: </strong><br><%- author %><br>
+        <hr>
+        <p id = "timestamp"></p>
+        <hr>
+        <a href="/">HOME</a>
+        <script>
+            var todaysdate = new Date();
+            document.getElementById("timestamp").innerHTML =
+            "<strong>Task Completed at:</strong>" + todaysdate;
+        </script>
+
+	</div>
+</body>
+</html>

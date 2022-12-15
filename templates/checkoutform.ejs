@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css"/>
+    <title>Checkout Form</title>
+</head>
+<body>
+    <h1 style="color:blue">Checkout form</h1>
+    <form method="post" action="/checkout" onsubmit="return confirm('Are you sure you want to submit your application?\r\nYou will not be able to change your information once submitted.') ;"> 
+    <fieldset>
+        <label>Name: <input type="text" name="name" required> </label> 
+        <label>Email Address: <input type="text" name="email" required> </label> 
+        <br>
+        <br>
+        <label>Book Name: <input type="text" name="bookname" required> </label> 
+        <br>
+        <br>
+        <label>Author: <input type="text" name="author" required> </label> 
+    </fieldset>
+    <br>
+    <input type="reset" name="reset" value="Reset">
+    <input type="submit" name="submit" value="Submit Application">
+    </form>
+    <hr>
+    <a href="/">Index</a>
+</body>
+</html>
